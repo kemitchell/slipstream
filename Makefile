@@ -1,35 +1,35 @@
 FORMS=terms
 COMMONFORM=node_modules/.bin/commonform
 PRODUCTS=cform hash docx pdf
-BUILD=build
+RELEASE=release
 TARGETS=$(foreach type,$(PRODUCTS),$(addsuffix .$(type),terms))
 
-all: $(addprefix $(BUILD)/,$(TARGETS))
+all: $(addprefix $(RELEASE)/,$(TARGETS))
 
 %.pdf: %.docx
 	unoconv $<
 
-$(BUILD)/%.hash: %.cform | $(COMMONFORM) $(BUILD)
+$(RELEASE)/%.hash: %.cform | $(COMMONFORM) $(RELEASE)
 	$(COMMONFORM) hash $< > $@
 
-$(BUILD)/%.docx: %.cform title blanks.json | $(COMMONFORM) $(BUILD)
+$(RELEASE)/%.docx: %.cform title blanks.json | $(COMMONFORM) $(RELEASE)
 	$(COMMONFORM) render --format docx --title "$(shell cat title)" --number outline --indent-margins --left-align-title --blanks blanks.json $< >$@
 
-$(BUILD)/%.cform: %.cform | $(COMMONFORM) $(BUILD)
+$(RELEASE)/%.cform: %.cform | $(COMMONFORM) $(RELEASE)
 	$(COMMONFORM) render --format native < $< > $@
 
 $(COMMONFORM):
 	npm install
 
-$(BUILD):
-	mkdir $(BUILD)
+$(RELEASE):
+	mkdir $(RELEASE)
 
 .PHONY: clean docker
 
 clean:
-	rm -rf $(BUILD)
+	rm -rf $(RELEASE)
 
 docker:
 	docker build -t software-service-terms .
-	docker run -v $(shell pwd)/$(BUILD):/app/$(BUILD) software-service-terms
-	sudo chown -R `whoami`:`whoami` $(BUILD)
+	docker run -v $(shell pwd)/$(RELEASE):/app/$(RELEASE) software-service-terms
+	sudo chown -R `whoami`:`whoami` $(RELEASE)
