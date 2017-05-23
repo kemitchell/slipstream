@@ -12,8 +12,8 @@ all: $(addprefix $(BUILD)/,$(TARGETS))
 $(BUILD)/%.hash: %.cform | $(COMMONFORM) $(BUILD)
 	$(COMMONFORM) hash $< > $@
 
-$(BUILD)/%.docx: %.cform | $(COMMONFORM) $(BUILD)
-	$(COMMONFORM) render --format docx --title "Software Terms" --number outline --indent-margins --left-align-title $< >$@
+$(BUILD)/%.docx: %.cform blanks.json | $(COMMONFORM) $(BUILD)
+	$(COMMONFORM) render --format docx --title "Software Terms" --number outline --indent-margins --left-align-title --blanks blanks.json $< >$@
 
 $(BUILD)/%.cform: %.cform | $(COMMONFORM) $(BUILD)
 	$(COMMONFORM) render --format native < $< > $@
