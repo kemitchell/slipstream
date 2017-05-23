@@ -30,6 +30,6 @@ clean:
 	rm -rf $(BUILD)
 
 docker:
-	docker build -t developer-tool-service-terms .
-	docker run -v $(shell pwd)/$(BUILD):/app/$(BUILD) developer-tool-service-terms
+	docker build -t software-service-terms .
+	docker run -v $(shell pwd)/$(BUILD):/app/$(BUILD) software-service-terms
 	sudo chown -R `whoami`:`whoami` $(BUILD)
