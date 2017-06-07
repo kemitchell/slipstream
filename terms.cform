@@ -118,7 +118,15 @@
         \Valid Excuses\ Neither side will be liable for any failure or delay in meeting any obligation under these terms caused by a <Disaster>, failure of the other side or its personnel to meet their obligations under these terms, or actions done or delayed on the written request of the other side.
         \Only Express Warranties!!  With the sole exception of its obligations in {Provider's Obligations}, <Provider> provides the <Software> "as is", without express or implied warranties about the quality of the <Software>, the security or correct operation of any <Hosted Software>, or the quality of any services.  <Provider> disclaims any warranties the law might otherwise imply, like warranties of merchantability, fitness for any particular purpose, title, or noninfringement.
         \Limited Damages!!
-            \!!  These terms do not limit damages for breach of {Pay Fees}, {Keep Customer Data Confidential}, {Follow Rules About Use}, {Enforce Rules About Use}, {Provide Assurance about Patents}, {Abide by Export Controls}, {Indemnify Customer}, or {Indemnify Provider}.
+            \!!  These terms do not limit damages for breach of:
+                \\  {Pay Fees}
+                \\  {Keep Customer Data Confidential}
+                \\  {Follow Rules About Use}
+                \\  {Enforce Rules About Use}
+                \\  {Provide Assurance about Patents}
+                \\  {Abide by Export Controls}
+                \\  {Indemnify Customer}
+                \\  {Indemnify Provider}
             \!!  Neither side's total liability for breach of any other terms will exceed the amount of <Fees> <Provider> received from <Customer> during the twelve months before the first claim is filed.  This limit applies even if the one liable is advised that the other may suffer damages, and even if <Customer> paid no fees at all.
             \!!  Neither side will be liable for breach-of-contract damages they could not have reasonably foreseen when agreeing to these terms.
 
