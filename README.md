@@ -18,10 +18,10 @@ This form is for small companies offering software services that users access vi
 
 1.  _Minimum Legalese_:  Wherever possible, the form tries to use simple sentences of ordinary English.
 
-2.  _Maximum Internet_:  As much communication, from signup to changes through termination, should happen online as possible.
+2.  _Maximum Internet_:  As much communication should happen online as possible, from signup to changes through termination.
 
 3.  _Commercial Flexibility_:  Allow providers to offer custom packages of features, pricing, deal terms, and other details without revising the form.
 
 4.  _One Form to Rule Them All_:  Free and paid customers, hosted-service and licensed, should all see one set of legal terms.
 
-5.  _Balance_:  Try to plot a middle course between what providers want and what customers want, placing risks and responsibilities where they'd usually end up if each side had full opportunity to put all its best arguments forward.
+5.  _Balance_:  Try to plot a middle course between what providers usually want and what customers usually want, placing risks and responsibilities where they'd usually end up if each side had full opportunity to put all its best arguments forward.
