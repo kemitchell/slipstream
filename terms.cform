@@ -9,7 +9,7 @@
     \Order\
         \\  These terms, together with the specifics of the accompanying <Order>, govern <Customer>'s use of the <Software>.  The ""Order"" is either:
             \\  the order <Customer> submitted through the <Account Dashboard>, for a <Package> that <Provider> offered through the <Account Dashboard>
-            \\  the purchase order <Customer> sent <Provider> for a <Package> that <Provider> quoted to <Customer>
+            \\  the purchase order <Customer> sent <Provider>, for a <Package> that <Provider> quoted to <Customer>
         \\  A ""Package"" is an offer of specific ""Deal Terms"" from <Provider>:
             \\  <Hosted Software> or <Licensed Software>
             \\  a ""Feature Set"" of <Software Features>
