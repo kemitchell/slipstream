@@ -27,7 +27,7 @@
         \Custom Deal Terms\  A <Package> may say that <Customer> can choose particular <Deal Terms> for itself, such as <Use Allowances> numbers or <Payment Method>.  <Customer>'s choices are also part of the <Order>.
         \Default Deal Terms\
             \\  If a <Package> doesn't mention a currency for <Software Pricing> or <Support Pricing> numbers, the currency is United States Dollars.
-            \\  If a <Package> doesn't mention a <Feature Set>, the <Package> covers all <Software Features> available on the <Order> date.
+            \\  If a <Package> doesn't mention a <Feature Set>, the <Package> covers all <Software Features> described in the <Documentation> on the <Order> date.
             \\  If a <Package> offers a <Payment Method> that <Provider> must start by billing <Customer>, but does not mention payment terms, payments are due within thirty calendar days of receiving each bill, with late-payment interest of 1.5% per month.
             \\  If a <Package> includes support services, but doesn't say when <Provider> will respond to <Support Requests>, <Provider> will respond on <Business Days> from 8:30 AM to 6:30 PM in the time zone of <Provider's Main Office>.
 
