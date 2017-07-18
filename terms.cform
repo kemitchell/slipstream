@@ -177,7 +177,7 @@
         \\  ""Prepaid Fees"" means <Fees> <Customer> prepaid for time remaining in the current <Billing Cycle>.
         \\  ""Pricing"" means <Software Pricing> and any <Support Pricing>.
         \\  ""Provider's Local Courts"" means the state and federal courts with jurisdiction at <Provider's Main Office>.
-        \\  ""Provider's Main Office"" means <Provider>'s office where its most senior executive officer works most often.  If <Provider> does not have an office, <Provider's Main Office> is the capital of the state under whose laws <Provider> is organized.
+        \\  ""Provider's Main Office"" means <Provider>'s office where its most senior executive officer is based on the date of this agreement.  If <Provider> does not have an office, <Provider's Main Office> is the capital of the state under whose laws <Provider> is organized.
         \\  ""Publicly Licensed"" means published with a notice of a license to the public, or to everyone who receives a copy.
         \\  ""Public Software Repository"" means an website or Internet service that provides free-of-charge downloads of <Publicly Licensed> <Software>.
         \\  ""Running Instances"" means the number of copies of the <Software> <Customer> runs at any given time.
