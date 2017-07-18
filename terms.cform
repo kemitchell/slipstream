@@ -46,7 +46,7 @@
                     \\  share the plan with relevant <Provider> personnel
                     \\  give <Customer> a copy of the current plan on request.
                     \\  follow the plan if a <Disaster> happens
-                \Use Responsible Subcontractors\  <Provider> agrees to make sure its employees and contractors abide by {Keep Customer Data Confidential}, {Prepare for Disasters}, and {Keep Malicious Code Out of the Software}.  <Provider> may contract with others to provide computers and software services used to provide the <Software> to <Customer>.
+                \Use Responsible Subcontractors\  <Provider> agrees to make sure its employees and contractors abide by {Keep Customer Data Confidential}, {Take Security Precautions}, {Prepare for Disasters}, and {Keep Malicious Code Out of the Software}.  <Provider> may contract with others to provide computers and software services used to provide the <Software> to <Customer>.
             \Licensed\  If the <Order> is for ""Licensed Software"":
                 \Provide a Download\  While the <Order> continues, <Provider> agrees to make the <Latest Version of the Software> supporting the <Feature Set> available for <Customer> to download through the <Account Dashboard>.
                 \Document Installation and Configuration\  While the <Order> continues, <Provider> agrees to make sure the <Documentation> has instructions that enable a system administrator experienced with a supported operating system to install, configure, and running the <Latest Version of the Software>.
