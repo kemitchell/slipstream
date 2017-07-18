@@ -41,7 +41,11 @@
                     \\  to monitor use of the <Software> to detect and prevent breach of these terms
                     \\  to respond to <Support Requests>
                 \Take Security Precautions\  <Provider> agrees to take industry-standard security precautions to keep <Customer Data> that it has secure from inadvertent publication and hacker attack.  <Provider> does not agree to make sure <Customer Data> is completely free of software bugs or configuration errors affecting security, or completely secure from all possible hacker attacks.
-                \Prepare for Disasters\  While the <Order> continues, <Provider> agrees to have a written plan to recover from any <Disaster> affecting either the computers used to provide the <Software> or the integrity of <Customer Data>, share the plan with relevant <Provider> personnel, review and revise the plan periodically, follow the plan if a <Disaster> happens, and give <Customer> a copy of the current plan on request.
+                \Prepare for Disasters\  While the <Order> continues, <Provider> agrees to:
+                    \\  adopt, maintain, and periodically review a written plan to recover from any <Disaster> affecting either the computers used to provide the <Software> or the integrity of <Customer Data>
+                    \\  share the plan with relevant <Provider> personnel
+                    \\  give <Customer> a copy of the current plan on request.
+                    \\  follow the plan if a <Disaster> happens
                 \Use Responsible Subcontractors\  <Provider> agrees to make sure its employees and contractors abide by {Keep Customer Data Confidential}, {Prepare for Disasters}, and {Keep Malicious Code Out of the Software}.  <Provider> may contract with others to provide computers and software services used to provide the <Software> to <Customer>.
             \Licensed\  If the <Order> is for ""Licensed Software"":
                 \Provide a Download\  While the <Order> continues, <Provider> agrees to make the <Latest Version of the Software> supporting the <Feature Set> available for <Customer> to download through the <Account Dashboard>.
