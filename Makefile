@@ -34,5 +34,6 @@ clean:
 
 docker:
 	docker build -t software-service-terms .
-	docker run -v $(shell pwd)/$(RELEASE):/app/$(RELEASE) software-service-terms
-	sudo chown -R `whoami`:`whoami` $(RELEASE)
+	docker run --name software-service-terms software-service-terms
+	docker cp software-service-terms:/app/$(RELEASE) .
+	docker rm software-service-terms
