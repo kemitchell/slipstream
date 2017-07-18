@@ -13,7 +13,7 @@ $(RELEASE)/%.hash: %.cform | $(COMMONFORM) $(RELEASE)
 	$(COMMONFORM) hash $< > $@
 
 $(RELEASE)/%.docx: %.cform title blanks.json | $(COMMONFORM) $(RELEASE)
-	$(COMMONFORM) render --format docx --title "$(shell cat title)" --number outline --indent-margins --left-align-title --blanks blanks.json $< >$@
+	$(COMMONFORM) render --format docx --title "$(shell cat title)" --number outline --indent-margins --left-align-title --blanks blanks.json --mark-filled $< >$@
 
 $(RELEASE)/%.html: %.cform title blanks.json | $(COMMONFORM) $(RELEASE)
 	$(COMMONFORM) render --format html5 --title "$(shell cat title)" --blanks blanks.json $< >$@
