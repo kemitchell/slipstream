@@ -23,7 +23,7 @@
                 \\  ""Support Terms"" setting how and when <Provider> will respond to <Support Requests>
                 \\  ""Support Pricing"", a way to calculate ""Support Fees""
                 \\  any <Service-Level Agreement> for response to <Support Requests>
-            \\  any ""Eligibility Criteria"" that <Customer> must meet to order and keep the <Package>, such as 501(c)(3) tax-exempt status
+            \\  any ""Eligibility Criteria"" that <Customer> must meet to order the <Package>, such as 501(c)(3) tax-exempt status
         \Custom Deal Terms\  A <Package> may say that <Customer> can choose particular <Deal Terms> for itself, such as <Use Allowances> numbers or <Payment Method>.  <Customer>'s choices are also part of the <Order>.
         \Default Deal Terms\
             \\  If a <Package> doesn't mention a currency for <Software Pricing> or <Support Pricing> numbers, the currency is United States Dollars.
