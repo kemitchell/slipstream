@@ -59,7 +59,7 @@
         \Keep Malicious Code Out of the Software\  While the <Order> continues, <Provider> agrees to make sure the <Latest Version of the Software> is free of malicious code.
         \Limit Validation Code in the Software\  <Provider> may include code in the <Latest Version of the Software> that automatically disables <Software Features> on failure to validate administrative <Access Credentials>, but agrees not to include any code that disables <Software Features> based on monitoring of <Use Allowances>.  <Provider> may include code that monitors <Use Allowances>, validates administrative <Access Credentials>, and reports results back to <Customer> systems.
         \Protect Customer from Liability\  So long as the <Pricing> requires <Customer> to pay some amount of <Software Fees>, and <Customer> has paid all <Fees> as required by these terms:
-            \Indemnify Customer\  <Provider> agrees to give <Customer> <Indemnification> for <Legal Claims> by others alleging that <Permitted Use of the Software> infringes any copyright, trademark, or trade secret right, or breaks the law.
+            \Indemnify Customer\  Subject to {Indemnification Process}, <Provider> agrees to give <Customer> <Indemnification> for <Legal Claims> by others alleging that <Permitted Use of the Software> infringes any copyright, trademark, or trade secret right, or breaks the law.
             \Provide Assurance about Patents\  As of the <Order> date, <Provider> is not aware of any patent <Provider> would infringe by licensing or providing the <Software> under these terms, or that <Customer> would infringe by <Permitted Use of the Software>.
             \Address Legal Problems\  <Provider> agrees that if someone else gets a court order against <Customer>'s <Permitted Use of the Software> based on a claim that it infringes any <Intellectual Property Right>, or breaks the law, or if <Provider> anticipates that kind of claim, <Provider> will give <Customer> <Notice>, and may take any of these added steps:
                 \\  <Provider> may release a new <Latest Version of the Software> so that <Permitted Use of the Software> will no longer infringe or break the law.
@@ -89,7 +89,7 @@
         \Notify Provider if it Becomes Ineligible for the Package\  <Customer> agrees to give <Notice> if it stops meeting any eligibility criterion for the <Package> the <Order> was for before the <Order> ends.
         \Keep Access Credentials Secret and Secure\  <Customer> agrees to make sure <Customer Personnel> only share <Access Credentials> as needed to use the <Software> and services under these terms, and secure <Access Credentials> at least as well as <Customer>'s own confidential information.
         \Abide by Export Controls\  The <Software> is subject to United States export restrictions, and may be subject to foreign import restrictions.  <Customer> agrees not to break any import or export law by exporting or reexporting the <Software>.
-        \Indemnify Provider\  <Customer> agrees to give <Provider> <Indemnification> from <Legal Claims> by others based on:
+        \Indemnify Provider\  Subject to {Indemnification Process}, <Customer> agrees to give <Provider> <Indemnification> from <Legal Claims> by others based on:
             \\  breach of these terms
             \\  <Customer Data>
             \\  <Use of the Software at Customer's Own Risk>
