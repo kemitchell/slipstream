@@ -50,7 +50,7 @@
             \Licensed\  If the <Order> is for ""Licensed Software"":
                 \Provide a Download\  While the <Order> continues, <Provider> agrees to make the <Latest Version of the Software> supporting the <Feature Set> available for <Customer> to download through the <Account Dashboard>.
                 \Document Installation and Configuration\  While the <Order> continues, <Provider> agrees to make sure the <Documentation> has instructions that enable a system administrator experienced with a supported operating system to install, configure, and run the <Latest Version of the Software>.
-                \Make Sure Customer Can Download Dependencies\  While the <Order> continues, <Provider> agrees to make sure any <Dependencies> not included in the download of the <Latest Version of the Software> from the <Account Dashboard> are <Publicly Licensed> and generally available for <Customer> to download from a <Public Software Repository>.  <Provider> does not agree to any <Service-Level Agreement> or other specific guarantee about any <Public Software Repository>.
+                \Make Sure Customer Can Download Software Dependencies\  While the <Order> continues, <Provider> agrees to make sure any <Software Dependencies> not included in the download of the <Latest Version of the Software> from the <Account Dashboard> are <Publicly Licensed> and generally available for <Customer> to download from a <Public Software Repository>.  <Provider> does not agree to any <Service-Level Agreement> or other specific guarantee about any <Public Software Repository>.
         \Provide Support\  If the <Order> includes <Support Terms>, <Provider> agrees to respond to <Support Requests> as the <Support Terms> describe while the <Order> continues.
         \Publish Documentation\  While the <Order> continues, <Provider> agrees to host the <Documentation> so <Customer> personnel can read it.
         \Give Credits for Bad Service\  If the <Order> includes any <Service-Level Agreement>, <Provider> agrees to credit <Customer>'s account on <Notice> and verification that it failed to provide service to standards, according to the <Service-Level Agreement>.  <Provider> agrees to apply credits against <Customer>'s obligations to pay <Fees> as soon as possible.  <Provider> does not agree to refund any credits.
@@ -159,7 +159,7 @@
         \\  ""Customer Data"" means data that <Users> furnish to the <Software>, such as by entering it or configuring the <Software> to gather or receive it, if doing so doesn't breach these terms, as well as data the <Software> collects about <Users> and how they use the <Software>.
         \\  ""Customer Personnel"" means <Customer>'s employees and each <Customer> subsidiary's employees, as well as independent contractors providing services to <Customer>.
         \\  ""Customer Systems"" means computer programs run by <Customer> or by independent contractors for <Customer>.
-        \\  ""Dependencies"" means software from others that the <Software> depends on, installs, configures, or links, directly or indirectly, to provide the <Feature Set>.
+        \\  ""Software Dependencies"" means software from others that the <Software> depends on, installs, configures, or links, directly or indirectly, to provide the <Feature Set>.
         \\  ""Disaster"" means:
             \\  fire, flood, earthquake, and other natural disasters
             \\  declared and undeclared wars, acts of terrorism, sabotage, riots, civil disorders, rebellions, and revolutions
