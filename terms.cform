@@ -44,7 +44,7 @@
                 \Prepare for Disasters\  While the <Order> continues, <Provider> agrees to:
                     \\  adopt, maintain, and periodically review a written plan to recover from any <Disaster> affecting either the computers used to provide the <Software> or the integrity of <Customer Data>
                     \\  share the plan with relevant <Provider> personnel
-                    \\  give <Customer> a copy of the current plan on request.
+                    \\  give <Customer> a copy of the current plan on request
                     \\  follow the plan if a <Disaster> happens
                 \Use Responsible Subcontractors\  <Provider> agrees to make sure its employees and contractors abide by {Keep Customer Data Confidential}, {Take Security Precautions}, {Prepare for Disasters}, and {Keep Malicious Code Out of the Software}.  <Provider> may contract with others to provide computers and software services used to provide the <Software> to <Customer>.
             \Licensed\  If the <Order> is for ""Licensed Software"":
