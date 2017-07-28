@@ -118,7 +118,7 @@
         \Agreed Legal Remedies\
             \\  Each side's only legal remedy for <Legal Claims> covered by <Indemnification> will be <Indemnification>.
             \\  <Customer>'s only legal remedy for failures to meet any <Service-Level Agreement> will be credits under {Give Credits for Bad Service}.
-            \\  <Customer>'s only legal remedy for changes to <Software Features> in the <Latest Version of the Software> will be refunds under {Refund Prepaid Fees for Removed Features}, if it applies.
+            \\  <Customer>'s only legal remedy for changes to <Software Features> in the <Latest Version of the Software> will be refunds under {Refund Prepaid Fees for Removed Features}.
         \Valid Excuses\  Neither side will be liable for any failure or delay in meeting any obligation under these terms caused by a <Disaster>, failure of the other side or its personnel to meet their obligations under these terms, or actions done or delayed on the written request of the other side.
         \Only Express Warranties!!  With the sole exception of its obligations in {Provider's Obligations}, <Provider> provides the <Software> "as is", without express or implied warranties about the quality of the <Software>, the security or correct operation of any <Hosted Software>, or the quality of any services.  <Provider> disclaims any warranties the law might otherwise imply, like warranties of merchantability, fitness for any particular purpose, title, or noninfringement.
         \Limited Damages!!
