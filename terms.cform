@@ -98,7 +98,7 @@
     \Intellectual Property\
         \Copyright License\  If the <Order> is for <Licensed Software>, <Provider> grants <Customer> and each of the <Users> a <Standard License> for any copyrights <Provider> can license to copy, install, back up, and make <Permitted Use of the Software>, and to copy and back up the <Documentation>.
         \Patent License\  <Provider> grants <Customer> and each of the <Users> a <Standard License> under any patents <Provider> can license to make <Permitted Use of the Software>.
-        \No Other Licenses\  With the sole exceptions of the licenses in {Intellectual Property}, these terms do not license or assign any <Intellectual Property Right>.
+        \No Other Licenses\  With the exceptions of the licenses in {Intellectual Property}, these terms do not license or assign any <Intellectual Property Right>.
 
     \Changes\
         \Changes Customer May Make\  Subject to {Change Process}:
@@ -120,7 +120,7 @@
             \\  <Customer>'s only legal remedy for failures to meet any <Service-Level Agreement> will be credits under {Give Credits for Bad Service}.
             \\  <Customer>'s only legal remedy for changes to <Software Features> in the <Latest Version of the Software> will be refunds under {Refund Prepaid Fees for Removed Features}.
         \Valid Excuses\  Neither side will be liable for any failure or delay in meeting any obligation under these terms caused by a <Disaster>, failure of the other side or its personnel to meet their obligations under these terms, or actions done or delayed on written request of the other side.
-        \Only Express Warranties!!  With the sole exception of its obligations in {Provider's Obligations}, <Provider> provides the <Software> "as is", without express or implied warranties about the quality of the <Software>, the security or correct operation of any <Hosted Software>, or the quality of any services.  <Provider> disclaims any warranties the law might otherwise imply, like warranties of merchantability, fitness for any particular purpose, title, or noninfringement.
+        \Only Express Warranties!!  With the exception of its obligations in {Provider's Obligations}, <Provider> provides the <Software> "as is", without express or implied warranties about the quality of the <Software>, the security or correct operation of any <Hosted Software>, or the quality of any services.  <Provider> disclaims any warranties the law might otherwise imply, like warranties of merchantability, fitness for any particular purpose, title, or noninfringement.
         \Limited Damages!!
             \!!  Subject to {Damages Limit Exceptions}, neither side's total liability for breach of these terms will exceed the amount of <Fees> <Provider> received from <Customer> during the twelve months before the first claim is filed.  This limit applies even if the one liable is advised that the other may suffer damages, and even if <Customer> paid no fees at all.
             \!!  Subject to {Damages Limit Exceptions}, neither side will be liable for breach-of-contract damages they could not have reasonably foreseen when agreeing to these terms.
