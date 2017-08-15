@@ -38,7 +38,7 @@
                 \Send Access Credentials\  <Provider> agrees to send <Customer> a set of administrative <Access Credentials> for the <Software> on entering into this agreement.  While the <Order> continues, <Provider> agrees to send <Customer> a new set of administrative <Access Credentials> on request.
                 \Keep Customer Data Confidential\ <Provider> agrees not to access, use, or disclose <Customer Data> without <Permission>, except:
                     \\  as needed to provide the <Software>
-                    \\  to monitor use of the <Software> to detect and prevent breach of these terms
+                    \\  to monitor use of the <Software> to prevent, detect, and mitigate breach of these terms
                     \\  to respond to <Support Requests>
                 \Take Security Precautions\  <Provider> agrees to take industry-standard security precautions to keep <Customer Data> that it has secure from inadvertent publication and hacker attack.  <Provider> does not agree to make sure <Customer Data> is completely free of software bugs or configuration errors affecting security, or completely secure from all possible hacker attacks.
                 \Prepare for Disasters\  While the <Order> continues, <Provider> agrees to:
