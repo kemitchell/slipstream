@@ -1,5 +1,6 @@
 {
   "devDependencies": {
-    "commonform-cli": "^0.27.0"
+    "commonform-cli": "^0.27.1",
+    "reviewers-edition-spell": "^2.0.0"
   }
 }
