@@ -13,8 +13,8 @@
         \\  A ""Package"" is an offer of specific ""Deal Terms"" from <Provider>:
             \\  <Hosted Software> or <Licensed Software>
             \\  a ""Feature Set"" of <Software Features>
-            \\  ""Use Allowances"", numeric limits on use of the <Software>, such as "ten <User Accounts>", "two <Running Instances>", or "a hundred <Concurrent Users>"
-            \\  ""Software Pricing"", a way to calculate ""Software Fees"", such as a flat amount for a set number of <User Accounts>, an amount based on the number of <Running Instances>, or a limited-time, free trial followed by a flat amount per month
+            \\  ""Use Allowances"", numeric limits on use of the <Software>, such as "ten <User Accounts>", "two <Running Instances>", or "twenty <Concurrent Users>"
+            \\  ""Software Pricing"", a way to calculate ""Software Fees"", such as a flat amount for a set number of <User Accounts>, an amount based on the number of <Running Instances>, or a free trial followed by a flat monthly fee
             \\  a ""Commitment Period"", the recurring period of time, starting on the <Order> date, when <Provider> commits to the <Deal Terms>, such as each month, each quarter, or each year
             \\  a ""Payment Method"", such as automatic credit card charges or invoices paid by wire transfer
             \\  a ""Billing Cycle"", such as monthly or annually, on which <Customer> will pay for use of the <Software>
