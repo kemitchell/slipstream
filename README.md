@@ -1,10 +1,10 @@
-# Software Service Terms
+# Slipstream
 
 an open form for public hosted and licensed software services
 
 The form is under active development toward a stable release.  Contributions are very welcome.
 
-Download the most recent release from [GitHub](https://github.com/kemitchell/software-service-terms/releases).
+Download the most recent release from [GitHub](https://github.com/kemitchell/slipstream/releases).
 
 ## Be Warned!
 

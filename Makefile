@@ -33,7 +33,7 @@ clean:
 	rm -rf $(RELEASE)
 
 docker:
-	docker build -t software-service-terms .
-	docker run --name software-service-terms software-service-terms
-	docker cp software-service-terms:/app/$(RELEASE) .
-	docker rm software-service-terms
+	docker build -t slipstream .
+	docker run --name slipstream slipstream
+	docker cp slipstream:/app/$(RELEASE) .
+	docker rm slipstream
