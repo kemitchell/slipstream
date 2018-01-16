@@ -86,7 +86,7 @@
             \\  publish data about the performance of the <Software>
         \Enforce Rules About Use\  <Customer> agrees to make sure <Customer Personnel> and other personnel abide by {Follow Rules About Use} and {Abide by Export Controls}.
         \Update Account Details\  While the <Order> continues, <Customer> agrees to use the <Account Dashboard> to keep its contact, payment, and other administrative details complete, accurate, and up-to-date.
-        \Notify Provider if it Becomes Ineligible for the Package\  <Customer> agrees to give <Notice> if it stops meeting any eligibility criterion for the <Product Package> the <Order> was for before the <Order> ends.
+        \Notify Provider if it Becomes Ineligible for the Package\  <Customer> agrees to give <Notice> if it stops meeting any of the <Eligibility Criteria> before the <Order> ends.
         \Keep Access Credentials Secret and Secure\  <Customer> agrees to make sure <Customer Personnel> only share <Access Credentials> as needed to use the <Software> and services under these terms, and secure <Access Credentials> at least as well as <Customer>'s own confidential information.
         \Abide by Export Controls\  The <Software> is subject to United States export restrictions, and may be subject to foreign import restrictions.  <Customer> agrees not to break any import or export law by exporting or reexporting the <Software>.
         \Indemnify Provider\  Subject to {Indemnification Process}, <Customer> agrees to give <Provider> <Indemnification> from <Legal Claims> by others based on:
@@ -106,7 +106,7 @@
             \\  If <Software Pricing> and any <Support Pricing> can calculate <Fees> for different <Use Allowances>, <Customer> may change its <Use Allowances> within any <Pricing> limits at any time.  <Customer> changes to <Use Allowances> take effect as soon as <Customer> pays any added <Fees> under the <Pricing>.
         \Changes Provider May Make\  Subject to {Change Process}:
             \\  <Provider> may end the <Order> whenever <Pricing> does not require <Customer> to pay any amount of <Software Fees>.
-            \\  <Provider> may end the <Order> if <Customer> stops meeting any <Eligibility Criteria>.
+            \\  <Provider> may end the <Order> if <Customer> stops meeting any of the <Eligibility Criteria>.
             \\  <Provider> may end the <Order> at the end of any <Commitment Period> by giving <Notice> at least one <Billing Cycle> in advance.
             \\  <Provider> may end the <Order> immediately if <Customer> breaches these terms.
             \\  <Provider> may add, remove, and change <Software Features> in the <Latest Version of the Software>.
