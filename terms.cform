@@ -13,15 +13,15 @@
         \\  A ""Product Package"" is an offer of specific ""Deal Terms"" from <Provider>:
             \\  <Hosted Software> or <Licensed Software>
             \\  a ""Feature Set"" of <Software Features>
-            \\  ""Use Allowances"", numeric limits on use of the <Software>, such as "ten <User Accounts>", "two <Running Instances>", or "twenty <Concurrent Users>"
-            \\  ""Software Pricing"", a way to calculate ""Software Fees"", such as a flat amount for a set number of <User Accounts>, an amount based on the number of <Running Instances>, or a free trial followed by a flat monthly fee
-            \\  a ""Commitment Period"", the recurring period of time, starting on the <Order> date, when <Provider> commits to the <Deal Terms>, such as each month, each quarter, or each year
-            \\  a ""Payment Method"", such as automatic credit card charges or invoices paid by wire transfer
-            \\  a ""Billing Cycle"", such as monthly or annually, on which <Customer> will pay for use of the <Software>
+            \\  ""Use Allowances"": numeric limits on use of the <Software>, such as "ten <User Accounts>", "two <Running Instances>", or "twenty <Concurrent Users>"
+            \\  ""Software Pricing"": a way to calculate ""Software Fees"", such as a flat amount for a set number of <User Accounts>, an amount based on the number of <Running Instances>, or a free trial followed by a flat monthly fee
+            \\  a ""Commitment Period"": the recurring period of time, starting on the <Order> date, when <Provider> commits to the <Deal Terms>, such as each month, each quarter, or each year
+            \\  a ""Payment Method"" such as automatic credit card charges or invoices paid by wire transfer
+            \\  a ""Billing Cycle"" such as monthly or annually, on which <Customer> will pay for use of the <Software>
             \\  if the <Product Package> is for <Hosted Software>, any <Service-Level Agreement> for the <Website>
             \\  if the <Product Package> includes support services:
                 \\  ""Support Terms"" setting how and when <Provider> will respond to <Support Requests>
-                \\  ""Support Pricing"", a way to calculate ""Support Fees""
+                \\  ""Support Pricing"": a way to calculate ""Support Fees""
                 \\  any <Service-Level Agreement> for response to <Support Requests>
             \\  any ""Eligibility Criteria"" that <Customer> must meet to order the <Product Package>, such as 501(c)(3) tax-exempt status
         \Custom Deal Terms\  A <Product Package> may allow <Customer> to choose particular <Deal Terms> for itself, such as <Use Allowances> numbers or <Payment Method>.  <Customer>'s choices on entering this agreement are also part of the <Order>.
