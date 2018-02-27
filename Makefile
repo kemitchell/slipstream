@@ -21,8 +21,8 @@ all: $(addprefix $(RELEASE)/,$(TARGETS))
 $(RELEASE)/%.hash: %.cform | $(COMMONFORM) $(RELEASE)
 	$(COMMONFORM) hash $< > $@
 
-$(RELEASE)/%.docx: %.cform title blanks.json | $(COMMONFORM) $(RELEASE)
-	$(COMMONFORM) render --format docx --title "$(shell cat title)" --edition "$(SPELLED_EDITION)" --number outline --indent-margins --left-align-title --blanks blanks.json --mark-filled $< >$@
+$(RELEASE)/%.docx: %.cform title blanks.json styles.json | $(COMMONFORM) $(RELEASE)
+	$(COMMONFORM) render --format docx --title "$(shell cat title)" --edition "$(SPELLED_EDITION)" --number outline --indent-margins --left-align-title --blanks blanks.json --mark-filled --styles styles.json $< >$@
 
 $(RELEASE)/%.html: %.cform title blanks.json | $(COMMONFORM) $(RELEASE)
 	$(COMMONFORM) render --format html5 --title "$(shell cat title)" --edition "$(SPELLED_EDITION)" --blanks blanks.json $< >$@
