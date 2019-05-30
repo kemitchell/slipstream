@@ -36,7 +36,7 @@
             \Hosted\  If the <Order> is for ""Hosted Software"":
                 \Run the Software\  While the <Order> continues, <Provider> agrees to run the <Software> so that <Customer Personnel> can use the <Feature Set> by visiting the <Website> with computers and software that meet any requirements set out in the current <Documentation>.
                 \Send Access Credentials\  <Provider> agrees to send <Customer> a set of administrative <Access Credentials> for the <Software> on entering into this agreement.  While the <Order> continues, <Provider> agrees to send <Customer> a new set of administrative <Access Credentials> on request.
-                \Keep Customer Data Confidential\ <Provider> agrees not to access, use, or disclose <Customer Data> without <Permission>, except:
+                \Keep Customer Data Confidential\  <Provider> agrees not to access, use, or disclose <Customer Data> without <Permission>, except:
                     \\  as needed to provide the <Software>
                     \\  to monitor use of the <Software> to prevent, detect, and mitigate breach of these terms
                     \\  to respond to <Support Requests>
@@ -124,7 +124,7 @@
         \Only Express Warranties!!  With the exception of its obligations in {Provider's Obligations}, <Provider> provides the <Software> "as is", without express or implied warranties about the quality of the <Software>, the security or correct operation of any <Hosted Software>, or the quality of any services.  <Provider> disclaims any warranties the law might otherwise imply, like warranties of merchantability, fitness for any particular purpose, title, or noninfringement.
         \Limited Damages!!
             \!!  Subject to {Damages Limit Exceptions}, neither side's total liability for breach of these terms will exceed the amount of <Fees> <Provider> received from <Customer> during the twelve months before the first claim is filed.  This limit applies even if the one liable is advised that the other may suffer damages, and even if <Customer> paid no fees at all.
-            \!!  Subject to {Damages Limit Exceptions}, neither side will be liable for breach-of-contract damages they could not have reasonably foreseen when agreeing to these terms.
+            \!!  Neither side will be liable for breach-of-contract damages they could not have reasonably foreseen when agreeing to these terms.
             \Damages Limit Exceptions\  {Limited Damages} does not limit damages for breach of:
                 \\  {Pay Fees}
                 \\  {Keep Customer Data Confidential}
