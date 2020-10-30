@@ -5,7 +5,6 @@ CFHTML=node_modules/.bin/commonform-html
 JSON=node_modules/.bin/json
 SPELL=node_modules/.bin/reviewers-edition-spell
 PRODUCTS=docx pdf html
-RELEASE=release
 TARGETS=$(foreach type,$(PRODUCTS),$(addsuffix .$(type),terms))
 
 GIT_TAG=$(strip $(shell git tag -l --points-at HEAD))
@@ -16,68 +15,68 @@ else
 	SPELLED_EDITION=$(shell echo "$(EDITION)" | $(SPELL) | sed 's!draft of!draft of the!')
 endif
 
-all: $(addprefix $(RELEASE)/,$(TARGETS))
+all: $(addprefix release/,$(TARGETS))
 
 %.pdf: %.docx
 	unoconv $<
 
-$(RELEASE)/%.docx: $(RELEASE)/%.form $(RELEASE)/%.title $(RELEASE)/%.values $(RELEASE)/%.directions $(RELEASE)/%.styles | $(COMMONFORM) $(RELEASE)
+release/%.docx: release/%.form release/%.title release/%.values release/%.directions release/%.styles | $(COMMONFORM) release
 	$(CFDOCX) \
-		--title "$(shell cat $(RELEASE)/$*.title)" \
+		--title "$(shell cat release/$*.title)" \
 		--edition "$(SPELLED_EDITION)" \
-		--values $(RELEASE)/$*.values \
-		--directions $(RELEASE)/$*.directions \
+		--values release/$*.values \
+		--directions release/$*.directions \
 		--mark-filled \
-		--styles $(RELEASE)/$*.styles \
+		--styles release/$*.styles \
 		--number outline \
 		--indent-margins \
 		--left-align-title \
 		--smartify \
 		$< > $@
 
-$(RELEASE)/%.html: $(RELEASE)/%.form $(RELEASE)/%.title $(RELEASE)/%.values $(RELEASE)/%.directions | $(COMMONFORM) $(RELEASE)
+release/%.html: release/%.form release/%.title release/%.values release/%.directions | $(COMMONFORM) release
 	$(CFHTML) \
-		--title "$(shell cat $(RELEASE)/$*.title)" \
+		--title "$(shell cat release/$*.title)" \
 		--edition "$(SPELLED_EDITION)" \
-		--values $(RELEASE)/$*.values \
-		--directions $(RELEASE)/$*.directions \
+		--values release/$*.values \
+		--directions release/$*.directions \
 		--ids \
 		--lists \
 		--smartify \
 		< $< > $@
 
-$(RELEASE)/%.parsed: %.md | $(RELEASE) $(CFCM)
+release/%.parsed: %.md | release $(CFCM)
 	$(CFCM) parse $< > $@
 
-$(RELEASE)/%.form: $(RELEASE)/%.parsed | $(RELEASE) $(JSON)
+release/%.form: release/%.parsed | release $(JSON)
 	$(JSON) form < $< > $@
 
-$(RELEASE)/%.directions: $(RELEASE)/%.parsed | $(RELEASE) $(JSON)
+release/%.directions: release/%.parsed | release $(JSON)
 	$(JSON) directions < $< > $@
 
-$(RELEASE)/%.title: $(RELEASE)/%.parsed | $(RELEASE) $(JSON)
+release/%.title: release/%.parsed | release $(JSON)
 	$(JSON) frontMatter.title < $< > $@
 
-$(RELEASE)/%.values: $(RELEASE)/%.parsed | $(RELEASE) $(JSON)
+release/%.values: release/%.parsed | release $(JSON)
 	$(JSON) frontMatter.blanks < $< > $@
 
-$(RELEASE)/%.styles: $(RELEASE)/%.parsed | $(RELEASE) $(JSON)
+release/%.styles: release/%.parsed | release $(JSON)
 	$(JSON) frontMatter.styles < $< > $@
 
 $(COMMONFORM) $(SPELL):
 	npm install
 
-$(RELEASE):
-	mkdir $(RELEASE)
+release:
+	mkdir release
 
 .PHONY: clean docker
 
 clean:
-	rm -rf $(RELEASE)
+	rm -rf release
 
 DOCKER_TAG=slipstream
 docker:
 	docker build -t $(DOCKER_TAG) .
 	docker run --name $(DOCKER_TAG) $(DOCKER_TAG)
-	docker cp $(DOCKER_TAG):/workdir/$(RELEASE) .
+	docker cp $(DOCKER_TAG):/workdir/release .
 	docker rm $(DOCKER_TAG)
