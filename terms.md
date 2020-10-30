@@ -1,3 +1,22 @@
+---
+title: Slipstream Software Service Terms
+blanks:
+  Software Name: Example Software, Inc.
+  Software Description: demonstrating the use of this form
+  Website URL: https://example.com/
+  Account Dashboard URL: https://account.example.com/
+  Documentation URL: https://doc.exmaple.com/
+styles:
+  heading:
+    italic: true
+  beforeDefinition: false
+  afterDefinition: false
+  reference:
+    italic: true
+  referenceHeading:
+    italic: true
+---
+
 **Provider** and **Customer** agree:
 
 # Software
