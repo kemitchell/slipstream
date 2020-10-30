@@ -15,68 +15,68 @@ else
 	SPELLED_EDITION=$(shell echo "$(EDITION)" | $(SPELL) | sed 's!draft of!draft of the!')
 endif
 
-all: $(addprefix release/,$(TARGETS))
+all: $(addprefix build/,$(TARGETS))
 
 %.pdf: %.docx
 	unoconv $<
 
-release/%.docx: release/%.form release/%.title release/%.values release/%.directions release/%.styles | $(COMMONFORM) release
+build/%.docx: build/%.form build/%.title build/%.values build/%.directions build/%.styles | $(COMMONFORM) build
 	$(CFDOCX) \
-		--title "$(shell cat release/$*.title)" \
+		--title "$(shell cat build/$*.title)" \
 		--edition "$(SPELLED_EDITION)" \
-		--values release/$*.values \
-		--directions release/$*.directions \
+		--values build/$*.values \
+		--directions build/$*.directions \
 		--mark-filled \
-		--styles release/$*.styles \
+		--styles build/$*.styles \
 		--number outline \
 		--indent-margins \
 		--left-align-title \
 		--smartify \
 		$< > $@
 
-release/%.html: release/%.form release/%.title release/%.values release/%.directions | $(COMMONFORM) release
+build/%.html: build/%.form build/%.title build/%.values build/%.directions | $(COMMONFORM) build
 	$(CFHTML) \
-		--title "$(shell cat release/$*.title)" \
+		--title "$(shell cat build/$*.title)" \
 		--edition "$(SPELLED_EDITION)" \
-		--values release/$*.values \
-		--directions release/$*.directions \
+		--values build/$*.values \
+		--directions build/$*.directions \
 		--ids \
 		--lists \
 		--smartify \
 		< $< > $@
 
-release/%.parsed: %.md | release $(CFCM)
+build/%.parsed: %.md | build $(CFCM)
 	$(CFCM) parse $< > $@
 
-release/%.form: release/%.parsed | release $(JSON)
+build/%.form: build/%.parsed | build $(JSON)
 	$(JSON) form < $< > $@
 
-release/%.directions: release/%.parsed | release $(JSON)
+build/%.directions: build/%.parsed | build $(JSON)
 	$(JSON) directions < $< > $@
 
-release/%.title: release/%.parsed | release $(JSON)
+build/%.title: build/%.parsed | build $(JSON)
 	$(JSON) frontMatter.title < $< > $@
 
-release/%.values: release/%.parsed | release $(JSON)
+build/%.values: build/%.parsed | build $(JSON)
 	$(JSON) frontMatter.blanks < $< > $@
 
-release/%.styles: release/%.parsed | release $(JSON)
+build/%.styles: build/%.parsed | build $(JSON)
 	$(JSON) frontMatter.styles < $< > $@
 
 $(COMMONFORM) $(SPELL):
 	npm install
 
-release:
-	mkdir release
+build:
+	mkdir build
 
 .PHONY: clean docker
 
 clean:
-	rm -rf release
+	rm -rf build
 
 DOCKER_TAG=slipstream
 docker:
 	docker build -t $(DOCKER_TAG) .
 	docker run --name $(DOCKER_TAG) $(DOCKER_TAG)
-	docker cp $(DOCKER_TAG):/workdir/release .
+	docker cp $(DOCKER_TAG):/workdir/build .
 	docker rm $(DOCKER_TAG)
