@@ -11,10 +11,10 @@ all: $(addprefix build/,$(TARGETS))
 build/%.pdf: build/%.docx
 	soffice --headless --convert-to pdf --outdir build "$<"
 
-build/%.docx: build/%.form build/%.title build/%.edition build/%.values build/%.directions build/%.styles | $(CFDOCX) build
+build/%.docx: build/%.form build/%.title build/%.version build/%.values build/%.directions build/%.styles | $(CFDOCX) build
 	$(CFDOCX) \
 		--title "$(shell cat build/$*.title)" \
-		--edition "$(shell cat build/$*.edition)" \
+		--form-version "$(shell cat build/$*.version)" \
 		--values build/$*.values \
 		--directions build/$*.directions \
 		--mark-filled \
@@ -22,13 +22,13 @@ build/%.docx: build/%.form build/%.title build/%.edition build/%.values build/%.
 		--number outline \
 		--indent-margins \
 		--left-align-title \
-		--smartify \
+		--smart \
 		$< > $@
 
-build/%.html: build/%.form build/%.title build/%.edition build/%.values build/%.directions | $(CFHTML) build
+build/%.html: build/%.form build/%.title build/%.version build/%.values build/%.directions | $(CFHTML) build
 	$(CFHTML) \
 		--title "$(shell cat build/$*.title)" \
-		--edition "$(shell cat build/$*.edition)" \
+		--form-version "$(shell cat build/$*.version)" \
 		--values build/$*.values \
 		--directions build/$*.directions \
 		--ids \
@@ -48,8 +48,8 @@ build/%.directions: build/%.parsed | build $(JSON)
 build/%.title: build/%.parsed | build $(JSON)
 	$(JSON) frontMatter.title < $< > $@
 
-build/%.edition: build/%.parsed | build $(JSON)
-	$(JSON) frontMatter.edition < $< > $@
+build/%.version: build/%.parsed | build $(JSON)
+	$(JSON) frontMatter.version < $< > $@
 
 build/%.values: build/%.parsed | build $(JSON)
 	$(JSON) frontMatter.blanks < $< > $@
