@@ -1,6 +1,6 @@
 ---
 title: Slipstream Software Service Terms
-version: Development Draft
+version: Version 1.0.0-7
 blanks:
   Software Name: Example Software, Inc.
   Software Description: demonstrating the use of this form
