@@ -3,27 +3,18 @@ CFCM=node_modules/.bin/commonform-commonmark
 CFDOCX=node_modules/.bin/commonform-docx
 CFHTML=node_modules/.bin/commonform-html
 JSON=node_modules/.bin/json
-SPELL=node_modules/.bin/reviewers-edition-spell
 PRODUCTS=docx pdf html
 TARGETS=$(foreach type,$(PRODUCTS),$(addsuffix .$(type),terms))
-
-GIT_TAG=$(strip $(shell git tag -l --points-at HEAD))
-EDITION=$(if $(GIT_TAG),$(GIT_TAG),Development Draft)
-ifeq ($(EDITION),development draft)
-	SPELLED_EDITION=$(EDITION)
-else
-	SPELLED_EDITION=$(shell echo "$(EDITION)" | $(SPELL) | sed 's!draft of!draft of the!')
-endif
 
 all: $(addprefix build/,$(TARGETS))
 
 build/%.pdf: build/%.docx
 	soffice --headless --convert-to pdf --outdir build "$<"
 
-build/%.docx: build/%.form build/%.title build/%.values build/%.directions build/%.styles | $(CFDOCX) build
+build/%.docx: build/%.form build/%.title build/%.edition build/%.values build/%.directions build/%.styles | $(CFDOCX) build
 	$(CFDOCX) \
 		--title "$(shell cat build/$*.title)" \
-		--edition "$(SPELLED_EDITION)" \
+		--edition "$(shell cat build/$*.edition)" \
 		--values build/$*.values \
 		--directions build/$*.directions \
 		--mark-filled \
@@ -34,10 +25,10 @@ build/%.docx: build/%.form build/%.title build/%.values build/%.directions build
 		--smartify \
 		$< > $@
 
-build/%.html: build/%.form build/%.title build/%.values build/%.directions | $(CFHTML) build
+build/%.html: build/%.form build/%.title build/%.edition build/%.values build/%.directions | $(CFHTML) build
 	$(CFHTML) \
 		--title "$(shell cat build/$*.title)" \
-		--edition "$(SPELLED_EDITION)" \
+		--edition "$(shell cat build/$*.edition)" \
 		--values build/$*.values \
 		--directions build/$*.directions \
 		--ids \
@@ -56,6 +47,9 @@ build/%.directions: build/%.parsed | build $(JSON)
 
 build/%.title: build/%.parsed | build $(JSON)
 	$(JSON) frontMatter.title < $< > $@
+
+build/%.edition: build/%.parsed | build $(JSON)
+	$(JSON) frontMatter.edition < $< > $@
 
 build/%.values: build/%.parsed | build $(JSON)
 	$(JSON) frontMatter.blanks < $< > $@

@@ -1,5 +1,6 @@
 ---
 title: Slipstream Software Service Terms
+edition: Development Draft
 blanks:
   Software Name: Example Software, Inc.
   Software Description: demonstrating the use of this form
