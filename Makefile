@@ -17,8 +17,8 @@ endif
 
 all: $(addprefix build/,$(TARGETS))
 
-%.pdf: %.docx
-	unoconv $<
+build/%.pdf: build/%.docx
+	soffice --headless --convert-to pdf --outdir build "$<"
 
 build/%.docx: build/%.form build/%.title build/%.values build/%.directions build/%.styles | $(COMMONFORM) build
 	$(CFDOCX) \
