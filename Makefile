@@ -20,7 +20,7 @@ all: $(addprefix build/,$(TARGETS))
 build/%.pdf: build/%.docx
 	soffice --headless --convert-to pdf --outdir build "$<"
 
-build/%.docx: build/%.form build/%.title build/%.values build/%.directions build/%.styles | $(COMMONFORM) build
+build/%.docx: build/%.form build/%.title build/%.values build/%.directions build/%.styles | $(CFDOCX) build
 	$(CFDOCX) \
 		--title "$(shell cat build/$*.title)" \
 		--edition "$(SPELLED_EDITION)" \
@@ -34,7 +34,7 @@ build/%.docx: build/%.form build/%.title build/%.values build/%.directions build
 		--smartify \
 		$< > $@
 
-build/%.html: build/%.form build/%.title build/%.values build/%.directions | $(COMMONFORM) build
+build/%.html: build/%.form build/%.title build/%.values build/%.directions | $(CFHTML) build
 	$(CFHTML) \
 		--title "$(shell cat build/$*.title)" \
 		--edition "$(SPELLED_EDITION)" \
@@ -63,7 +63,7 @@ build/%.values: build/%.parsed | build $(JSON)
 build/%.styles: build/%.parsed | build $(JSON)
 	$(JSON) frontMatter.styles < $< > $@
 
-$(COMMONFORM) $(SPELL):
+$(CFCM) $(CFDOCX) $(CFHTML) $(JSON) $(SPELL):
 	npm install
 
 build:
