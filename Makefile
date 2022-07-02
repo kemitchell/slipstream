@@ -22,6 +22,7 @@ build/%.docx: build/%.form build/%.title build/%.version build/%.values build/%.
 		--number outline \
 		--indent-margins \
 		--left-align-title \
+		--left-align-body \
 		--smart \
 		$< > $@
 
